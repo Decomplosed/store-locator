@@ -14,6 +14,10 @@ app.use(express.json())
 // Enable cors
 app.use(cors())
 
+app.get('/api/v1/stores', (req, res) => {
+  res.send('Hello')
+})
+
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
