@@ -11,6 +11,9 @@ const app = express()
 // Body parser
 app.use(express.json())
 
+// Enable cors
+app.use(cors())
+
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
