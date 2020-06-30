@@ -24,5 +24,8 @@ exports.getStores = async (req, res, next) => {
 exports.addStore = async (req, res, next) => {
   try {
     console.log(req.body)
-  } catch (err) {}
+  } catch (err) {
+    console.error(err)
+    res.status(500).json({ error: 'Server Error' })
+  }
 }
