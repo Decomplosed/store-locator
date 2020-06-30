@@ -8,4 +8,15 @@ const StoreSchema = new mongoose.Schema({
     trim: true,
     maxlength: [10, 'Store ID must be less than 10 characters'],
   },
+  location: {
+    type: {
+      type: String,
+      enum: ['Point'],
+    },
+    coordinates: {
+      type: [Number],
+      index: '2dsphere',
+    },
+    formattedAddress: String,
+  },
 })
