@@ -19,4 +19,8 @@ const StoreSchema = new mongoose.Schema({
     },
     formattedAddress: String,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
 })
