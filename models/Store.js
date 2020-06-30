@@ -24,3 +24,5 @@ const StoreSchema = new mongoose.Schema({
     default: Date.now,
   },
 })
+
+module.export = mongoose.model('Store', StoreSchema)
