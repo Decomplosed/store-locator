@@ -23,5 +23,6 @@ exports.getStores = async (req, res, next) => {
 // @access Public
 exports.addStore = async (req, res, next) => {
   try {
+    console.log(req.body)
   } catch (err) {}
 }
