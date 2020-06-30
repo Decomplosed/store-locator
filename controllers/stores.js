@@ -12,5 +12,8 @@ exports.getStores = async (req, res, next) => {
       count: stores.length,
       data: stores,
     })
-  } catch (err) {}
+  } catch (err) {
+    console.error(err)
+    res.status(500).json({ error: 'Server Error' })
+  }
 }
