@@ -5,8 +5,12 @@ const Store = require('../models/Store')
 // @access Public
 exports.getStores = async (req, res, next) => {
   try {
-    
-  } catch (err) {
+    const stores = await Store.find()
 
-  }
+    return res.status(200).json({
+      success: true,
+      count: stores.length,
+      data: stores,
+    })
+  } catch (err) {}
 }
