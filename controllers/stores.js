@@ -21,4 +21,7 @@ exports.getStores = async (req, res, next) => {
 // @desc  Create a store
 // @route POST /api/v1/stores
 // @access Public
-exports.addStore = async (req, res, next) => {}
+exports.addStore = async (req, res, next) => {
+  try {
+  } catch (err) {}
+}
