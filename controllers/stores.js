@@ -23,7 +23,7 @@ exports.getStores = async (req, res, next) => {
 // @access Public
 exports.addStore = async (req, res, next) => {
   try {
-    console.log(req.body)
+    const store = await Store.create(req.body)
   } catch (err) {
     console.error(err)
     res.status(500).json({ error: 'Server Error' })
