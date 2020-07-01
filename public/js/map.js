@@ -37,6 +37,8 @@ function loadMap() {
         'icon-size': 1.5,
         'text-field': '{storeId}',
         'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+        'text-offset': [0, 0.9],
+        'text-anchor': 'top',
       },
     })
   })
