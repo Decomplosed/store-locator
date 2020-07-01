@@ -33,8 +33,10 @@ function loadMap() {
       type: 'symbol',
       source: 'point',
       layout: {
-        'icon-image': 'cat',
-        'icon-size': 0.25,
+        'icon-image': '{icon}-15',
+        'icon-size': 1.5,
+        'text-field': '{storeId}',
+        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
       },
     })
   })
