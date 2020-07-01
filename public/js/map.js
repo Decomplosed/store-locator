@@ -20,6 +20,10 @@ function loadMap() {
               type: 'Point',
               coordinates: [-71.157895, 42.707741],
             },
+            properties: {
+              storeId: '001',
+              icon: 'shop',
+            },
           },
         ],
       },
