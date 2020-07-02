@@ -6,7 +6,7 @@ const storeAddress = document.getElementById('store-address')
 function addStore(e) {
   e.preventDefault()
 
-  if (storeId.value === '' || storeAddress.value === '') {
+  if (storeId.value.trim() === '' || storeAddress.value.trim() === '') {
     alert('Please fill in fields')
   }
 }
