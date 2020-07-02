@@ -23,7 +23,12 @@ async function addStore(e) {
       },
       body: JSON.stringify(sendBody),
     })
-  } catch (error) {}
+
+    if(res.status === 400) {
+      throw Error('Store already exists')
+    }
+
+  } catch (err) {}
 }
 
 storeForm.addEventListener('submit', addStore)
