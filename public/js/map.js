@@ -17,7 +17,10 @@ async function getStores() {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [],
+        coordinates: [
+          store.location.coordinates[0],
+          store.location.coordinates[1],
+        ],
       },
       properties: {
         storeId: '001',
