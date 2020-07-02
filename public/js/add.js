@@ -21,6 +21,7 @@ async function addStore(e) {
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify(sendBody),
     })
   } catch (error) {}
 }
