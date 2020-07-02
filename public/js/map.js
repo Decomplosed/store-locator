@@ -28,6 +28,8 @@ async function getStores() {
       },
     }
   })
+
+  loadMap(stores)
 }
 
 // Load map with stores from API
