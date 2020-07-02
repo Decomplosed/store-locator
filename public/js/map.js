@@ -40,19 +40,6 @@ function loadMap(stores) {
       data: {
         type: 'FeatureCollection',
         features: stores,
-        // features: [
-        //   {
-        //     type: 'Feature',
-        //     geometry: {
-        //       type: 'Point',
-        //       coordinates: [-71.157895, 42.707741],
-        //     },
-        //     properties: {
-        //       storeId: '001',
-        //       icon: 'shop',
-        //     },
-        //   },
-        // ],
       },
     })
     map.addLayer({
