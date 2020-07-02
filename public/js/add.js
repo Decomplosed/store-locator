@@ -3,7 +3,7 @@ const storeId = document.getElementById('store-id')
 const storeAddress = document.getElementById('store-address')
 
 // Send POST to API to add store
-function addStore(e) {
+async function addStore(e) {
   e.preventDefault()
 
   if (storeId.value.trim() === '' || storeAddress.value.trim() === '') {
