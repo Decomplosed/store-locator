@@ -27,6 +27,8 @@ async function addStore(e) {
     if (res.status === 400) {
       throw Error('Store already exists')
     }
+
+    alert('Store added!')
   } catch (err) {
     alert(err)
   }
