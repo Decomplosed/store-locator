@@ -23,7 +23,7 @@ async function getStores() {
         ],
       },
       properties: {
-        storeId: '001',
+        storeId: store.storeId,
         icon: 'shop',
       },
     }
