@@ -58,4 +58,4 @@ function loadMap(stores) {
   })
 }
 
-loadMap()
+getStores()
