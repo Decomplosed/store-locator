@@ -11,6 +11,20 @@ const map = new mapboxgl.Map({
 async function getStores() {
   const res = await fetch('/api/v1/stores')
   const data = await res.json()
+
+  const stores = data.data.map((store) => {
+    return {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [],
+      },
+      properties: {
+        storeId: '001',
+        icon: 'shop',
+      },
+    }
+  })
 }
 
 // Load map with stores from API
