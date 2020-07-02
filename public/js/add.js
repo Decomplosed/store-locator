@@ -14,6 +14,12 @@ function addStore(e) {
     storeId: storeId.value,
     address: storeAddress.value,
   }
+
+  try {
+    
+  } catch (error) {
+
+  }
 }
 
 storeForm.addEventListener('submit', addStore)
