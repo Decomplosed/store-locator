@@ -24,11 +24,12 @@ async function addStore(e) {
       body: JSON.stringify(sendBody),
     })
 
-    if(res.status === 400) {
+    if (res.status === 400) {
       throw Error('Store already exists')
     }
-
-  } catch (err) {}
+  } catch (err) {
+    alert(err)
+  }
 }
 
 storeForm.addEventListener('submit', addStore)
