@@ -32,6 +32,7 @@ async function addStore(e) {
     window.location.href = '/index.html'
   } catch (err) {
     alert(err)
+    return
   }
 }
 
