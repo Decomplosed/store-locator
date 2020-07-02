@@ -8,7 +8,7 @@ const map = new mapboxgl.Map({
 })
 
 // Fetch stores from API
-function getStores() {}
+async function getStores() {}
 
 // Load map with stores from API
 function loadMap(stores) {
