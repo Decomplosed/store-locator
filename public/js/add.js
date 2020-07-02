@@ -16,10 +16,13 @@ async function addStore(e) {
   }
 
   try {
-    
-  } catch (error) {
-
-  }
+    const res = await fetch(`/api/v1/stores`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+  } catch (error) {}
 }
 
 storeForm.addEventListener('submit', addStore)
