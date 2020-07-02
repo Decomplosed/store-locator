@@ -9,6 +9,11 @@ function addStore(e) {
   if (storeId.value.trim() === '' || storeAddress.value.trim() === '') {
     alert('Please fill in fields')
   }
+
+  const sendBody = {
+    storeId: storeId.value,
+    address: storeAddress.value,
+  }
 }
 
 storeForm.addEventListener('submit', addStore)
